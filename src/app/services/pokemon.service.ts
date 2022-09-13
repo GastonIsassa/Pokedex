@@ -5,9 +5,10 @@ import { environment } from 'src/environments/environment';
 @Injectable({
   providedIn: 'root'
 })
+
 export class PokemonService {
 
-  baseUrl = environment.baseUrl;
+  baseUrl: any = environment.baseUrl;
 
   constructor(private http: HttpClient) { }
 

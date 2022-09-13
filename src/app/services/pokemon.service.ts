@@ -8,12 +8,12 @@ import { environment } from 'src/environments/environment';
 
 export class PokemonService {
 
-  baseUrl: any = environment.baseUrl;
+  baseUrl = environment.baseUrl;
 
   constructor(private http: HttpClient) { }
 
   getPokemons(index){
-    return this.http.get<any>(`${this.baseUrl}/pokemon/${index}` );
+    return this.http.get<any>(`${this.baseUrl}/pokemon/${index}`);
 
   }
 }
